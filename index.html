@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +19,29 @@
         }
         .profile {
             margin-top: 20px;
+        }
+        .social-links {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #007bff;
+        }
+        .github:hover {
+            color: #333;
+        }
+        .linkedin:hover {
+            color: #0077b5;
+        }
+        .twitter:hover {
+            color: #1da1f2;
         }
     </style>
 </head>
@@ -35,6 +59,17 @@
             <li><a href="#">项目一</a></li>
             <li><a href="#">项目二</a></li>
         </ul>
+    </section>
+    <section class="social-links">
+        <a href="https://github.com/jinsong07" class="github" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/li-jinsong-b855023a" class="linkedin" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/jinsong07" class="twitter" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
     </section>
     <footer>
         <p>&copy; 2025 我的个人主页</p>
