@@ -20,6 +20,25 @@
         }
         .profile {
             margin-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .profile-content {
+            flex: 1;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #007bff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .social-links {
             margin-top: 30px;
@@ -51,14 +70,19 @@
         <h1>欢迎来到我的个人主页</h1>
     </header>
     <section class="profile">
-        <h2>关于我</h2>
-        <p>我是一名专注于地图、自动驾驶和机器人领域的技术专家。曾在阿里巴巴、腾讯和百度等知名互联网公司工作，积累了丰富的行业经验。</p>
-        <p>我的专业领域包括：</p>
-        <ul>
-            <li>地图技术与应用开发</li>
-            <li>自动驾驶系统研发</li>
-            <li>机器人技术开发</li>
-        </ul>
+        <div class="profile-content">
+            <h2>关于我</h2>
+            <p>我是一名专注于地图、自动驾驶和机器人领域的技术专家。曾在阿里巴巴、腾讯和百度等知名互联网公司工作，积累了丰富的行业经验。</p>
+            <p>我的专业领域包括：</p>
+            <ul>
+                <li>地图技术与应用开发</li>
+                <li>自动驾驶系统研发</li>
+                <li>机器人技术开发</li>
+            </ul>
+        </div>
+        <div class="profile-photo">
+            <img src="images/profile.jpg" alt="个人照片">
+        </div>
     </section>
     <section>
         <h2>我的项目</h2>
